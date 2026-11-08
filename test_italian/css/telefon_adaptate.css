@@ -1,28 +1,47 @@
-
 @media (max-width: 768px) {
-    .hero-content>p{
-        font-size: 40px;
+    .container {
+        padding: 20px;
     }
-    .comments-section {
-        width: 80%;
-        margin-left: 5%;
-    }
-    .order-section {
-        width: 80%;
-        margin-left: 5%;
-    }
-    .testimonials {
-        width: 80%;
-        margin-left: 5%;
-    }
-    .featured {
-        width: 80%;
-        margin-left: 5%;
-    }
-}
 
-@media (max-width: 480px) {
-    .main__new {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    /* Мобильное меню */
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
         width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .order-price {
+        gap: 20px;
+    }
+
+    .order-price-wrap {
+        font-size: 24px;
+    }
+    
+    .comment.reply {
+        margin-left: 20px;
     }
 }
